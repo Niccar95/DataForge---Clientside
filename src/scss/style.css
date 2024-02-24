@@ -9,14 +9,12 @@ table {
   border: 1px solid black;
   width: 80%;
   height: auto;
-
-  th {
-    border: 1px solid black;
-    padding: 1em;
-  }
-
-  td {
-    border: solid black;
-    padding: 1em;
-  }
 }
+table th {
+  border: 1px solid black;
+  padding: 1em;
+}
+table td {
+  border: solid black;
+  padding: 1em;
+}/*# sourceMappingURL=style.css.map */

@@ -18,6 +18,25 @@
       </thead>
       <tbody class="tableBody"></tbody>
     </table>
+
+    <dialog id="createModal" class="hidden">
+      <label for="companyNameInput">Company name:</label>
+      <input id="companyNameInput" type="text" />
+
+      <label for="dropdown">Your application status:</label>
+      <select id="dropdown" name="fruits">
+        <option value="apple">Not sent</option>
+        <option value="banana">Sent</option>
+      </select>
+      <label for="dropdown">Company response:</label>
+      <select id="dropdown" name="companyResponse">
+        <option value="noResponse">No response</option>
+        <option value="Accepted">Accepted</option>
+        <option value="Denied">Denied</option>
+      </select>
+      <button class="addDataButton">Add data</button>
+    </dialog>
+    <button class="addButton">Add new data</button>
     <script type="module"></script>
     <script src="./main.js"></script>
   </body>

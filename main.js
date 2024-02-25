@@ -10,15 +10,28 @@ async function updateTable() {
 
   applications.forEach((application) => {
     const row = document.createElement("tr");
-    row.classList.add("row");
     row.innerHTML = `
       <td>${application.companyName}</td>
       <td>${application.applicationStatus}</td>
       <td>${application.response}</td>
     `;
-    console.log(row.classList.contains("row"));
     tableBody.appendChild(row);
   });
 }
+
+const addButton = document.querySelector(".addButton");
+
+function createDataModal() {
+  addButton.addEventListener("click", () => {
+    const createModal = document.getElementById("createModal");
+    createModal.classList.add(".visible");
+    createModal.classList.toggle("visible");
+  });
+}
+createDataModal();
+
+const addDataButtom = document.getElementById("addDataButton");
+
+async function createData() {}
 
 document.addEventListener("DOMContentLoaded", updateTable);
